@@ -19,6 +19,6 @@ for single_data in json_data["features"]:
     folium.Marker([first_coor,
               second_coor],
               popup=f'<strong> {place_name}, Opis: {description}  </strong>',
-              icon=folium.Icon(icon_size=(20,20)),
+            #   icon=folium.Icon(icon_size=(20,20)),
               tooltip=tooltip).add_to(m) 
 m.save('map.html')
